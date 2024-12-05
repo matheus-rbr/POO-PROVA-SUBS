@@ -1,0 +1,27 @@
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14pt;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* Cor de fundo azul */
+    border-radius: 5px;
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+  }
+  
+  a:active {
+    background-color: #004085; /* Cor de fundo ainda mais escura ao clicar */
+  }
+  
+  a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Adiciona um foco personalizado */
+  }
+  

@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Simulação de Investimento em Renda Fixa</h2>
+  <form (ngSubmit)="calcularRendimento()">
+    <div>
+      <label for="valor">Valor do Aporte Mensal:</label>
+      <input type="number" [(ngModel)]="valor" name="valor" required />
+    </div>
+
+    <div>
+      <label for="data_Resgate">Data de Resgate:</label>
+      <input type="date" [(ngModel)]="data_Resgate" name="data_Resgate" required />
+    </div>
+
+    <button type="submit">Calcular Rendimento</button>
+  </form>
+
+  <div *ngIf="resultado">
+    <h3>Rendimento Estimado: {{ resultado | currency:'BRL' }}</h3>
+  </div>
+</div>

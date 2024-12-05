@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Simulação de Financiamento de Veículos</h2>
+  <form (ngSubmit)="calcularPrestacao()">
+    <div>
+      <label for="valor">Valor Financiado:</label>
+      <input type="number" [(ngModel)]="valor" name="valor" required />
+    </div>
+
+    <div>
+      <label for="meses">Quantidade de Meses:</label>
+      <input type="number" [(ngModel)]="meses" name="meses" required />
+    </div>
+
+    <button type="submit">Calcular Prestação</button>
+  </form>
+
+  <div *ngIf="resultado">
+    <h3>Valor da Prestação: {{ resultado | currency:'BRL' }}</h3>
+  </div>
+</div>
